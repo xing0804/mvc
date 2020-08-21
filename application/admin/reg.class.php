@@ -1,11 +1,12 @@
 <?php
-class reg{
+class reg extends main{
     function add(){
-        $smarty=new Smarty();
-        $smarty->setTemplateDir(TPL_PATH);
-        $smarty->setCompileDir(COMPILE_PATH);
-
-        $smarty->display("reg.html");
+//        $smarty=new Smarty();
+//        $smarty->setTemplateDir(TPL_PATH);
+//        $smarty->setCompileDir(COMPILE_PATH);
+//
+//        $smarty->display("reg.html");
+        $this->smarty->display("reg.html");
     }
     function addUser(){
         $uname=$_POST["uname"];
@@ -16,12 +17,13 @@ class reg{
             return;
         }
         //连接数据库
-        $db=@new mysqli("localhost","root","","admin","3306");
-        if(mysqli_connect_error()){
-            die("数据库连接错误！");
-        }
-
-        $db->query("set names utf8");
+//        $db=@new mysqli("localhost","root","","admin","3306");
+//        if(mysqli_connect_error()){
+//            die("数据库连接错误！");
+//        }
+//
+//        $db->query("set names utf8");
+        $db=$this->db;
 
         //对数据库进行操作
         $result=$db->query("insert into login (uname,pass) values ('$uname','$pass1')");
