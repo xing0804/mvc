@@ -1,11 +1,38 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-08-23 14:28:17
+  from 'D:\Full_Stack\php\server\8.17\mvc\application\template\admin.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5f427d01c09b99_87630187',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '9df466a4f4efed7ec0ba97c14e4c1397efadcf5f' => 
+    array (
+      0 => 'D:\\Full_Stack\\php\\server\\8.17\\mvc\\application\\template\\admin.html',
+      1 => 1598192895,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5f427d01c09b99_87630187 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>后台首页</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="{JS_ADD}admin.js"></script>
-    <link rel="stylesheet" href="{CSS_ADD}admin.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_ADD;?>
+admin.js"><?php echo '</script'; ?>
+>
+    <link rel="stylesheet" href="<?php echo CSS_ADD;?>
+admin.css">
 </head>
 <body>
 <h1>后台管理系统</h1>
@@ -41,4 +68,5 @@
 </form>
 
 </body>
-</html>
+</html><?php }
+}

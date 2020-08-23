@@ -1,4 +1,5 @@
 <?php
+session_start();
 header("content-type:text/html;charset:utf-8");
 define("MVC",true);
 define("APP_DIR_NAME","application");

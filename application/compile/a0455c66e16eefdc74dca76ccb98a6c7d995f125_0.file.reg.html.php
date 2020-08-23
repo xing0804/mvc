@@ -1,11 +1,38 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-08-23 14:42:55
+  from 'D:\Full_Stack\php\server\8.17\mvc\application\template\reg.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5f42806fbbc8f0_45980167',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'a0455c66e16eefdc74dca76ccb98a6c7d995f125' => 
+    array (
+      0 => 'D:\\Full_Stack\\php\\server\\8.17\\mvc\\application\\template\\reg.html',
+      1 => 1598193570,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5f42806fbbc8f0_45980167 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>后台首页</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="{JS_ADD}admin.js"></script>
-    <link rel="stylesheet" href="{CSS_ADD}admin.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_ADD;?>
+admin.js"><?php echo '</script'; ?>
+>
+    <link rel="stylesheet" href="<?php echo CSS_ADD;?>
+admin.css">
 </head>
 <body>
 <h1>赶紧注册账号</h1>
@@ -39,4 +66,5 @@
 
 </form>
 </body>
-</html>
+</html><?php }
+}

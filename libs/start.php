@@ -68,10 +68,10 @@ include_once SMARTY_PATH."Smarty.class.php";
 include_once "route.class.php";
 include_once "main.class.php";
 
-function auto($classname){
-    include_once LIBS_PATH.str_replace("\\",DIRECTORY_SEPARATOR,$classname)."class.php";
-}
-spl_autoload_register("auto");
+//function auto($classname){
+//    include_once LIBS_PATH.str_replace("\\",DIRECTORY_SEPARATOR,$classname)."class.php";
+//}
+//spl_autoload_register("auto");
 
 $route=new \libs\route();
 $route->run();

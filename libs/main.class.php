@@ -17,7 +17,7 @@ class main{
         $host=isset($config["database"]["host"])?$config["database"]["host"]:"localhost";
         $username=isset($config["database"]["username"])?$config["database"]["username"]:"root";
         $password=isset($config["database"]["password"])?$config["database"]["password"]:"";
-        $dbname=isset($config["database"]["dbname"])?$config["database"]["dbname"]:"";
+        $dbname=isset($config["database"]["dbname"])?$config["database"]["dbname"]:"admin";
         $port=isset($config["database"]["port"])?$config["database"]["port"]:"3306";
 
         $db=new mysqli($host,$username,$password,$dbname,$port);

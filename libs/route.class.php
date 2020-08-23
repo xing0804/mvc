@@ -17,7 +17,7 @@ class route{
 
 
     private function getInfo(){
-        $path=isset($_SERVER["PATH_INFO"])?substr($_SERVER["PATH_INFO"],1):"index/index/int";
+        $path=isset($_SERVER["PATH_INFO"])?substr($_SERVER["PATH_INFO"],1):"admin";
         $pathArr=(explode("/",$path));
 
         self::$m=empty($pathArr[0])?"index":$pathArr[0];

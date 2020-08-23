@@ -4,7 +4,7 @@ return array(
         "host"=>"localhost",
         "username"=>"root",
         "password"=>"",
-        "dbname"=>"one",
+        "dbname"=>"admin",
         "port"=>3306
     ),
     "smarty"=>array(
